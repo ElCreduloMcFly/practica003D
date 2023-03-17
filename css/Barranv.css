@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(to right, rgb(150, 150, 150), rgb(255, 255, 255));
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* BARRA DE NAVEGACIÓN */
+ul{
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li a{
+    display: block;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    padding: 14px 16px;
+}
+li{
+    display: inline-block;
+}
+
+/*imagenes*/
+div.polaroid {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 6px 10px;
+  }
+  div.centro{
+      margin-left: 20%;
+  }
