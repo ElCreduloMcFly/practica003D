@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, rgb(80, 185, 211), rgb(255, 255, 255));
+    background-image: linear-gradient(to right, rgb(80, 185, 211), rgba(67, 204, 69, 0.581));
 }
 
 * {
@@ -51,3 +51,13 @@ div.container {
 div.centro {
     margin-left: 25%;
 }
+
+/*Tamaño Letras*/
+
+.titulo{
+    font-size: 40px;
+}
+.subtitulo{
+    font-size: 24px;
+}
+
