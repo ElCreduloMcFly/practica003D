@@ -1,5 +1,7 @@
 body {
-    background-image: linear-gradient(to right, rgb(80, 185, 211), rgba(67, 204, 69, 0.581));
+    background-image: url(/img/BackGroundPerrosYGatos.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 * {
@@ -13,20 +15,23 @@ body {
 }
 /* BARRA DE NAVEGACIÓN */
 ul {
+    background: transparent;
+    backdrop-filter: blur(10px);
     list-style-type: none;
-    float: right;
+    float: unset;
     margin: 0;
     padding: 0;
     top: 0;
     left: 0;
     overflow: hidden;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
 }
 
 li a {
-    display: block;
+    display: flex;
     color: rgb(255, 255, 255);
+
     text-align: center;
     padding: 14px 16px;
 }
@@ -35,19 +40,101 @@ li {
     display: inline-block;
 }
 
+/*card effects*/
+html {
+    height: 50%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    height: 100%;
+  }
+  .hero-section {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    position: relative;
+    list-style: none;
+    gap: 30px;
+    width: 220px;
+    transition: .3s ease;
+  }
+  div.card {
+    border-radius: 10%;
+    background:none;
+  }
+  .card:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  .card-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+  }
+  .card:hover .card-background {
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+  }
+  .card-container:hover .card:not(:hover) {
+    transform: scale(.9);
+  }
+  .card-container:hover > .card:not(:hover) .card-background,
+  .card-container:hover > .card:not(:hover) .card-category {
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  .content {
+    top: 50%;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+  }
+  .card-category {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .card-heading {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+  }
+
 /*imagenes*/
-div.polaroides{
-    width: 40%;
-    background-image: linear-gradient(to right, rgb(80, 185, 211), rgba(67, 204, 69, 0.581));
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: inline-block;
-}
 div.polaroid {
+    margin-top: 8%;
+    border-radius: 10%;
     width: 20%;
-    background-image: linear-gradient(to right, rgb(80, 185, 211), rgba(67, 204, 69, 0.581));
+    background: transparent;
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: inline-block;
 }
+
 
 div.container {
     text-align: center;
@@ -55,15 +142,7 @@ div.container {
 }
 
 div.centro {
-    margin-left: 25%;
-}
-
-/*Tamaño Letras*/
-
-.titulo{
-    font-size: 40px;
-}
-.subtitulo{
-    font-size: 24px;
+    border-radius: 10%;
+    margin-left: 20%;
 }
 

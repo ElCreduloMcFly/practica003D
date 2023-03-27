@@ -16,8 +16,15 @@
 </head>
 
 <body>
+    <style>
+        body {
+            background-image: url(/img/BackgroundOtros.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
     <center>
-        <h3>
+        <h4>
             <ul>
                 <li><a href="Perros.html">Perros</a></li>
                 <li><a href="gatos.html">Gatos</a></li>
@@ -25,12 +32,11 @@
                 <li><a href="Nosotros.html">Nosotros</a></li>
                 <li><a href="Contactos.html">Contacto</a></li>
             </ul>
-        </h3>
+        </h4>
     </center>
     <br>
-    <br>
     <center>
-        <h1>PERROS</h1>
+        <h1>Nuestros Caninos</h1>
     </center>
     <center>Mamífero carnívoro doméstico de la familia de los cánidos que se caracteriza por tener los sentidos del
         olfato <br></center>
@@ -39,32 +45,34 @@
     <center>desde tiempos prehistóricos; hay muchísimas razas, de características muy diversas por lo cuál son una
         opción muy popular.<br></center>
     <center>
-        <h1>BÚSCAN HOGAR</h1>
+        <h1>Búscan un Hogar</h1>
     </center>
-    <div class="centro">
-        <div class="polaroid">
-            <a><img src="img/PastorAleman.jpg" alt="" style="width: 100%;" /></a>
-            <br>
-            <div class="container"><a href="Toby.html">Toby</a>
-                <br>
+    <section class="hero-section">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-background" style="background-image: url(img/PastorAleman.jpg); "></div>
+                <div class="content">
+                    <div class="card-category">DISPONIBLE</div>
+                    <h3 class="card-heading"><a href="Toby.html">Toby</a> </h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(img/GoldenRetri.jpg);"></div>
+                <div class="content">
+                    <div class="card-category">DISPONIBLE</div>
+                    <h3 class="card-heading"><a href="Arceus.html">Arceus</a></h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-background" style="background-image: url(img/Huskysiberian.jpeg);"></div>
+                <div class="content">
+                    <div class="card-category">DISPONIBLE</div>
+                    <h3 class="card-heading"><a href="Alka.html">Alka</a></h3>
+                </div>
             </div>
         </div>
-        <div class=" polaroid">
-            <img src="img/GoldenRetri.jpg" alt="" style="width: 100%;" />
-            <br>
-            <div class="container">
-                <a href="Arceus.html">Arceus</a>
-                <br>
-            </div>
-        </div>
-        <div class="polaroid">
-            <img src="img/Huskysiberian.jpeg" alt="" style="width: 100%;" />
-            <br>
-            <div class="container">
-                <a href="Alka.html">Alka</a>
-            </div>
-        </div>
-    </div>
+    </section>
+
     <!--javascript de boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
